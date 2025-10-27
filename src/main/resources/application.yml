@@ -1,0 +1,15 @@
+spring: 
+  application:
+    name:
+      SteamRest
+  datasource:
+    url: jdbc:postgresql://localhost:5432/your_db_name
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  sql: 
+    init:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+
