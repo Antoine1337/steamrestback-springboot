@@ -1,7 +1,7 @@
 spring: 
   application:
     name:
-      SteamRest
+      SteamBack
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
@@ -9,9 +9,6 @@ spring:
     driver-class-name: org.postgresql.Driver
     hikari:
       schema: DEV
-  sql: 
+  sql:
     init:
       mode: always
-  jpa:
-    database-platform: org.hibernate.community.dialect.SQLiteDialect
-
