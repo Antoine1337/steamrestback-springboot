@@ -10,4 +10,6 @@ public interface BibliothequeJeuxRepository extends CrudRepository<BibliothequeJ
 
     List<BibliothequeJeux> findBibliothequeJeuxByUtilisateurId(Long utilisateurId);
 
+    BibliothequeJeux findBibliothequeJeuxByUtilisateurIdAndJeuId(Long utilisateurId, Long jeuId);
+
 }
