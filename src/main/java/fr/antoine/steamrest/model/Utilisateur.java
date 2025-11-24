@@ -13,10 +13,15 @@ public class Utilisateur {
     private Long utilisateurId;
 
     private String nomUtilisateur;
+    
+    private String motDePasse;
 
     private String email;
 
     private Timestamp dateInscription;
+
+    private Long roleId;
+
 
     public Utilisateur() {
     }
@@ -48,6 +53,27 @@ public class Utilisateur {
     public void setDateInscription(Timestamp dateInscription) {
         this.dateInscription = dateInscription;
     }
+
+	public void setUtilisateurId(Long utilisateurId) {
+		this.utilisateurId = utilisateurId;
+	}
+
+	public Long getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
+
+	public String getMotDePasse() {
+		return motDePasse;
+	}
+
+	public void setMotDePasse(String motDePasse) {
+		this.motDePasse = motDePasse;
+	}
+
 
 
 }

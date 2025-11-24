@@ -13,7 +13,7 @@ public class BibliothequeJeuxService {
 
     private BibliothequeJeuxRepository bibliothequeJeuxRepository;
 
-    public BibliothequeJeuxService(BibliothequeJeuxRepository bibliothequeJeuxRepository) {
+    public BibliothequeJeuxService(BibliothequeJeuxRepository bibliothequeJeuxRepository, AuthentificationService authentificationService) {
         this.bibliothequeJeuxRepository = bibliothequeJeuxRepository;
     }
 

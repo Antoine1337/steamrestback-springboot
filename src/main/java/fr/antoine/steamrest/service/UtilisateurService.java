@@ -27,4 +27,8 @@ public class UtilisateurService {
         return this.utilisateurRepository.findById(id);
     }
 
+    public Optional<Utilisateur> getUtilisateurParNomUtilisateur(String nomUtilisateur) {
+        return this.utilisateurRepository.findUtilisateurByNomUtilisateur(nomUtilisateur);
+    }
+
 }
